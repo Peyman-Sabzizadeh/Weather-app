@@ -66,10 +66,41 @@
             </div>
          </div>
      </header>
-    <main class="main"></main>
+     <hr>
+    <main class="main">
+        <div class="week-data">
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-slide"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
+    </main>
     <footer class="footer"></footer>
 </div>
 <script src="script/script.js"></script>
 <script src="script/swiper-bundle.min.js"></script>
+<script type="text/javascript">
+    const swiper = new Swiper(".swiper", {
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        spaceBetween: 20,
+        breakpoints: {
+            768: {
+                slidesPerView: 2,
+            },
+            1200: {
+                slidesPerView: 3,
+            }
+        }
+    })
+</script>
 </body>
 </html>

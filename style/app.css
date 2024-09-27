@@ -21,7 +21,7 @@ html {
 body {
     font-family: "Poppins Regular";
     font-size: 1.6rem;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #02b4eb;
 }
 header
