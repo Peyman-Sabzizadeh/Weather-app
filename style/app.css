@@ -1,6 +1,14 @@
 @import url("normalize.css");
 @import url("grid.css");
 @import url("fonts.css");
+:root {
+  --app-color: #02b4eb;
+  --section-color: #0284c7;
+}
+:root.dark {
+  --app-color: #2c3335;
+  --section-color: #294553;
+}
 /* 
     --  Reset Styles  --
 */
@@ -22,7 +30,7 @@ body {
     font-family: "Poppins Regular";
     font-size: 1.6rem;
     overflow-x: hidden;
-    background-color: #02b4eb;
+    background-color: var(--app-color);
 }
 header
 {
@@ -51,7 +59,7 @@ header
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #0284c7;
+    background-color: var(--section-color);
     transition: .4s;
     border-radius: 30px;
     -webkit-transition: .4s;
@@ -178,7 +186,7 @@ header
     display: flex;
     justify-self: center;
     align-items: center;
-    background-color: #0284c7;
+    background-color: var(--section-color);
     border: none;
     color: #fff;
     cursor: pointer;

@@ -1,6 +1,3 @@
-let list = document.querySelectorAll(".navigation li");
-function activeLink() {
-  list.forEach((item) => item.classList.remove("active"));
-  this.classList.add("active");
-}
-list.forEach((item) => item.addEventListener("click", activeLink));
+const showBtn = document.querySelector(".header-section-search button")
+const inputBox = document.querySelector(".header-section-search input")
+const apiKey = "e934e472d9b35459af8900d8ab323b36"
