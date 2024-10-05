@@ -11,6 +11,11 @@ const PreciptationBox = document.getElementById("Preciptation")
 showBtn.addEventListener('click', function() {
     getWeather(inputBox.value);
 });
+inputBox.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+        getWeather(inputBox.value)
+    }
+})
 
 function getWeather(city) {
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
