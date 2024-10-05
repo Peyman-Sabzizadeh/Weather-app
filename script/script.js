@@ -53,6 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
     themeToggleButton.addEventListener("click", function() {
         if (isDarkMode) {
             document.body.style.backgroundColor = "#0f172a";
+            locBox.style.color = "#ffff";
+            tempBox.style.color = "#ffff";
             document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#0f172a";
             document.querySelectorAll('.section-info-part').forEach(box => {
                 box.style.backgroundColor="#ffff";
@@ -63,6 +65,8 @@ document.addEventListener("DOMContentLoaded", function() {
             isDarkMode = false;
         } else {
             document.body.style.backgroundColor = "#02b4eb";
+            locBox.style.color = "#0f172a";
+            tempBox.style.color = "#0f172a";
             document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#02b4eb";
             document.querySelectorAll('.section-info-part').forEach(box => {
                 box.style.backgroundColor="rgba(30, 62, 104, 0.671)";

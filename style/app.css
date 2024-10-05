@@ -230,7 +230,7 @@ header
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #183153;
+    /* color: #183153; */
   }
   .header-section-title
   { 
