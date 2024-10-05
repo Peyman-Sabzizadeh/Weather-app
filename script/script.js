@@ -52,15 +52,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
     themeToggleButton.addEventListener("click", function() {
         if (isDarkMode) {
-            document.body.style.backgroundColor = "#0f172a";
-            locBox.style.color = "#ffff";
-            tempBox.style.color = "#ffff";
+            document.body.style.backgroundColor = "#2c3335";
+            locBox.style.color = "#4f6570";
+            tempBox.style.color = "#4f6570";
             document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#0f172a";
             document.querySelectorAll('.section-info-part').forEach(box => {
-                box.style.backgroundColor="#ffff";
+                box.style.backgroundColor="#4f6570";
             });
             document.querySelectorAll('.section-info-part').forEach(box => {
-                box.style.color="#0f172a";
+                box.style.color="#ddd";
             });
             isDarkMode = false;
         } else {

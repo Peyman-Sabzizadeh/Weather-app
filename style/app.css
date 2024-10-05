@@ -7,7 +7,7 @@
 }
 :root.dark {
   --app-color: #2c3335;
-  --section-color: #294553;
+  --section-color: #4f6570;
 }
 /* 
     --  Reset Styles  --
@@ -192,12 +192,12 @@ header
     border: none;
     direction: ltr;
     outline: none;
-    border-radius: 20px;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
 }
   .header-section-search button[type="submit"] {
     /* width: 7rem;
