@@ -50,8 +50,8 @@ document.addEventListener("DOMContentLoaded", function() {
     themeToggleButton.addEventListener("click", function() {
         if (isDarkMode) {
             document.body.style.backgroundColor = "#2c3335";
-            locBox.style.color = "#4f6570";
-            tempBox.style.color = "#4f6570";
+            locBox.style.color = "#ddd";
+            tempBox.style.color = "#ddd";
             document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#0f172a";
             document.querySelectorAll('.section-info-part').forEach(box => {
                 box.style.backgroundColor="#4f6570";
