@@ -11,6 +11,7 @@ const PreciptationBox = document.getElementById("Preciptation")
 showBtn.addEventListener('click', function() {
     getWeather(inputBox.value);
 });
+
 function getWeather(city) {
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
@@ -42,3 +43,34 @@ function getWeather(city) {
             locBox.innerHTML = `<p>${error.message}</p>`;
         });
 }
+
+// /////////////////
+
+document.addEventListener("DOMContentLoaded", function() {
+    const themeToggleButton = document.getElementById("theme-toggle");
+    let isDarkMode = true; 
+
+    themeToggleButton.addEventListener("click", function() {
+        if (isDarkMode) {
+            document.body.style.backgroundColor = "#0f172a";
+            document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#0f172a";
+            document.querySelectorAll('.section-info-part').forEach(box => {
+                box.style.backgroundColor="#ffff";
+            });
+            document.querySelectorAll('.section-info-part').forEach(box => {
+                box.style.color="#0f172a";
+            });
+            isDarkMode = false;
+        } else {
+            document.body.style.backgroundColor = "#02b4eb";
+            document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#02b4eb";
+            document.querySelectorAll('.section-info-part').forEach(box => {
+                box.style.backgroundColor="rgba(30, 62, 104, 0.671)";
+            });
+            document.querySelectorAll('.section-info-part').forEach(box => {
+                box.style.color="#ffff";
+            });
+            isDarkMode = true;
+        }
+    });
+});

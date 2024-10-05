@@ -31,6 +31,11 @@ body {
     font-size: 1.6rem;
     overflow-x: hidden;
     background-color: var(--app-color);
+    transition:background-color 0.5s , color 0.5s ;
+    -webkit-transition:background-color 0.5s , color 0.5s ;
+    -moz-transition:background-color 0.5s , color 0.5s ;
+    -ms-transition:background-color 0.5s , color 0.5s ;
+    -o-transition:background-color 0.5s , color 0.5s ;
 }
 header
 {
@@ -46,6 +51,9 @@ header
     display: inline-block;
     width: 64px;
     height: 34px;
+    background-color: transparent;
+    border: none;
+    outline: none;
   }
   .switch input {
     opacity: 0;
@@ -111,7 +119,11 @@ header
   @keyframes rotate {
     0% {
       transform: rotate(0);
-    }
+      -webkit-transform: rotate(0);
+      -moz-transform: rotate(0);
+      -ms-transform: rotate(0);
+      -o-transform: rotate(0);
+}
     100% {
       transform: rotate(360deg);
     }
@@ -126,10 +138,18 @@ header
     }
     25% {
       transform: rotate(-10deg);
-    }
+      -webkit-transform: rotate(-10deg);
+      -moz-transform: rotate(-10deg);
+      -ms-transform: rotate(-10deg);
+      -o-transform: rotate(-10deg);
+}
     75% {
       transform: rotate(10deg);
-    }
+      -webkit-transform: rotate(10deg);
+      -moz-transform: rotate(10deg);
+      -ms-transform: rotate(10deg);
+      -o-transform: rotate(10deg);
+}
     100% {
       transform: rotate(0deg);
     }
@@ -174,10 +194,10 @@ header
     outline: none;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
   .header-section-search button[type="submit"] {
     /* width: 7rem;
