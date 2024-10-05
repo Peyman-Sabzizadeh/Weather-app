@@ -38,6 +38,23 @@ function getWeather(city) {
             WindBox.innerHTML=`${windSpeed}`;
             HumidityBox.innerHTML=`${humidity}`;
             PreciptationBox.innerHTML=`${Preciptation}`;
+            let getMod = data.current.condition.text
+            if (getMod === "Sunny" || "Clear") {
+                document.body.style.backgroundImage = "url(../image/sun-img.jpg)"
+                document.body.style.backgroundSize = "cover"
+            }
+            if (getMod.includes("rain")) {
+                document.body.style.backgroundImage = "url(../image/rain-img.jpg)"
+                document.body.style.backgroundSize = "cover"
+            }
+            if (getMod.includes("cloudy")) {
+                document.body.style.backgroundImage = "url(../image/cloud-img.jpg)"
+                document.body.style.backgroundSize = "cover"
+            }
+            if (getMod.includes("snow")) {
+                document.body.style.backgroundImage = "url(../image/snow-img.jpg)"
+                document.body.style.backgroundSize = "cover"
+            }
           })
           .catch(error => {
             locBox.innerHTML = `<p>${error.message}</p>`;
