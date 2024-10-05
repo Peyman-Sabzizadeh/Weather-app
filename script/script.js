@@ -5,9 +5,7 @@ const tempBox = document.getElementById("temp")
 const WindBox = document.getElementById("Wind")
 const HumidityBox = document.getElementById("Humidity")
 const PreciptationBox = document.getElementById("Preciptation")
- const apiKey = "76a82f54cc0d476b86171625240510"
-// const apiKey = "e934e472d9b35459af8900d8ab323b36"
-
+const apiKey = "76a82f54cc0d476b86171625240510"
 showBtn.addEventListener('click', function() {
     getWeather(inputBox.value);
 });
@@ -16,10 +14,8 @@ inputBox.addEventListener("keypress", function (event) {
         getWeather(inputBox.value)
     }
 })
-
 function getWeather(city) {
     const url = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
-
     fetch(url)
         .then(response => {
             if (!response.ok) {
@@ -37,7 +33,6 @@ function getWeather(city) {
             const windSpeed = data.current.wind_kph;
             const humidity = data.current.humidity;
             const Preciptation = data.current.temp_c;
-
             locBox.innerHTML=`${location}, ${region}, ${country}`;
             tempBox.innerHTML=`${temperature}`+'°C';
             WindBox.innerHTML=`${windSpeed}`;
@@ -48,13 +43,10 @@ function getWeather(city) {
             locBox.innerHTML = `<p>${error.message}</p>`;
         });
 }
-
-// /////////////////
-
+///////////////////
 document.addEventListener("DOMContentLoaded", function() {
     const themeToggleButton = document.getElementById("theme-toggle");
     let isDarkMode = true; 
-
     themeToggleButton.addEventListener("click", function() {
         if (isDarkMode) {
             document.body.style.backgroundColor = "#2c3335";
@@ -83,3 +75,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+window.addEventListener("load", function () {
+    inputBox.focus()
+})
