@@ -227,7 +227,8 @@ header
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-  .header-section-title
+  .header-section-title,
+  .header-section-img
   {
     font-size: 25px;
     font-weight: bold;
@@ -235,17 +236,14 @@ header
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* color: #183153; */
+    text-wrap: wrap;
   }
   .header-section-title
   { 
     margin-top: 2rem;
     gap: 1rem;
   }
-  .header-section-img div svg {
-    width: 10rem;
-    height: 10rem;
-  }
+  
   .header-section-info
   {
     display: flex;
