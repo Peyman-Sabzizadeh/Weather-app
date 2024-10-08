@@ -1,5 +1,6 @@
 const showBtn = document.querySelector(".header-section-search button")
 const inputBox = document.querySelector(".header-section-search input")
+const backgroundBox = document.querySelector(".header-section")
 const locBox = document.getElementById("loc")
 const tempBox = document.getElementById("temp")
 const WindBox = document.getElementById("Wind")
@@ -75,6 +76,7 @@ document.addEventListener("DOMContentLoaded", function() {
             locBox.style.color = "#ddd";
             tempBox.style.color = "#ddd";
             conditionBox.style.color = "#ddd";
+            backgroundBox.style.backgroundColor= "#333333c5";
             document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#0f172a";
             document.querySelectorAll('.section-info-part').forEach(box => {
                 box.style.backgroundColor="#4f6570";
@@ -88,6 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
             locBox.style.color = "#0f172a";
             tempBox.style.color = "#0f172a";
             conditionBox.style.color = "#0f172a";
+            backgroundBox.style.backgroundColor= "#ffffff59";
             document.querySelector('.header-section-search button[type="submit"]').style.backgroundColor = "#02b4eb";
             document.querySelectorAll('.section-info-part').forEach(box => {
                 box.style.backgroundColor="rgba(30, 62, 104, 0.671)";
