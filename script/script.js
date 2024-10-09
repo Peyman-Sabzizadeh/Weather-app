@@ -42,18 +42,22 @@ function getWeather(city) {
             if (getMod === "Sunny" || "Clear") {
                 document.body.style.backgroundImage = "url(../image/sun-img.jpg)"
                 document.body.style.backgroundSize = "cover"
+                document.body.style.backgroundRepeat = "no-repeat"
             }
             if (getMod.includes("rain")) {
                 document.body.style.backgroundImage = "url(../image/rain-img.jpg)"
                 document.body.style.backgroundSize = "cover"
+                document.body.style.backgroundRepeat = "no-repeat"
             }
             if (getMod.includes("cloudy")) {
                 document.body.style.backgroundImage = "url(../image/cloud-img.jpg)"
                 document.body.style.backgroundSize = "cover"
+                document.body.style.backgroundRepeat = "no-repeat"
             }
             if (getMod.includes("snow")) {
                 document.body.style.backgroundImage = "url(../image/snow-img.jpg)"
                 document.body.style.backgroundSize = "cover"
+                document.body.style.backgroundRepeat = "no-repeat"
             }
           })
           .catch(error => {
