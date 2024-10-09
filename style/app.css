@@ -173,7 +173,7 @@ header
   .header-section
   {
     width: 40rem;
-    background-color: #333333c5;
+    background-color: #acdcfc7e;
     padding: 3rem 1rem 3rem 1rem;
     border-radius: 1rem;
     display: flex;
@@ -227,7 +227,8 @@ header
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-  .header-section-title
+  .header-section-title,
+  .header-section-img
   {
     font-size: 25px;
     font-weight: bold;
@@ -236,16 +237,14 @@ header
     align-items: center;
     justify-content: center;
     text-align: center;
+    text-wrap: wrap;
   }
   .header-section-title
   { 
     margin-top: 2rem;
     gap: 1rem;
   }
-  .header-section-img div svg {
-    width: 10rem;
-    height: 10rem;
-  }
+  
   .header-section-info
   {
     display: flex;
