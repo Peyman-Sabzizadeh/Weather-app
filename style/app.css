@@ -30,6 +30,7 @@ body {
     font-family: "Poppins Regular";
     font-size: 1.6rem;
     overflow-x: hidden;
+    height: 100%;
     background-color: var(--app-color);
     transition:background-color 0.5s , color 0.5s ;
     -webkit-transition:background-color 0.5s , color 0.5s ;
