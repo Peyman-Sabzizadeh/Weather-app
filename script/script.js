@@ -6,6 +6,7 @@ const tempBox = document.getElementById("temp")
 const WindBox = document.getElementById("Wind")
 const HumidityBox = document.getElementById("Humidity")
 const PreciptationBox = document.getElementById("Preciptation")
+const conditionBox = document.getElementById("condition")
 const apiKey = "76a82f54cc0d476b86171625240510"
 showBtn.addEventListener('click', function() {
     getWeather(inputBox.value);
