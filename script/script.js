@@ -41,8 +41,6 @@ function getWeather(city) {
             HumidityBox.innerHTML=`${humidity}`;
             PreciptationBox.innerHTML=`${Preciptation}`;
             conditionBox.innerHTML=`${condition}`;
-            
-
 
             let getMod = `${condition}`;
             if (getMod === "Sunny" || "Clear") {
